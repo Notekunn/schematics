@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./lib",
+    "baseUrl": "./",
+    "noLib": false,
+    "skipLibCheck": true,
+    "paths": {
+      "@utils/*": ["./src/utils/*"]
+    }
+  },
+  "exclude": ["node_modules", "src/**/files/**", "lib/**/files/**"]
+}

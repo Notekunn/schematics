@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "cqrs": {
+      "description": "Generates a CQRS module",
+      "factory": "./schematics/cqrs/cqrs.factory#main",
+      "schema": "./schematics/cqrs/schema.json"
+    },
+    "command": {
+      "description": "Generates a CQRS command",
+      "factory": "./schematics/command/command.factory#main",
+      "schema": "./schematics/command/schema.json",
+      "aliases": ["cmd"]
+    }
+  }
+}
