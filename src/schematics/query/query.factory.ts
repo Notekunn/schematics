@@ -13,9 +13,9 @@ import {
 import { normalizeToKebabOrSnakeCase } from '@utils/formatting'
 import { NameParser } from '@utils/name-parser'
 import { mergeSourceRoot } from '@utils/source-root'
-import { CommandOptions } from './command.schema'
+import { QueryOptions } from './query.schema'
 
-export function main(options: CommandOptions) {
+export function main(options: QueryOptions) {
   options = transform(options)
   return (tree: Tree, context: SchematicContext) => {
     const sourceRule = chain([mergeSourceRoot(options), mergeWith(generate(options))])
@@ -23,7 +23,7 @@ export function main(options: CommandOptions) {
   }
 }
 
-function transform(source: CommandOptions) {
+function transform(source: QueryOptions) {
   const target = Object.assign({}, source)
   const location = NameParser.parse(source)
   target.name = normalizeToKebabOrSnakeCase(location.name)
@@ -33,7 +33,7 @@ function transform(source: CommandOptions) {
   return target
 }
 
-function generate(option: CommandOptions) {
+function generate(option: QueryOptions) {
   return (context: SchematicContext) => {
     const templateSource = apply(url('./files'), [
       template({

@@ -11,6 +11,12 @@
       "factory": "./schematics/command/command.factory#main",
       "schema": "./schematics/command/schema.json",
       "aliases": ["cmd"]
+    },
+    "query": {
+      "description": "Generates a CQRS query",
+      "factory": "./schematics/query/query.factory#main",
+      "schema": "./schematics/query/schema.json",
+      "aliases": ["qr"]
     }
   }
 }
