@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+# [1.2.0](https://github.com/Notekunn/schematics/compare/v1.1.0...v1.2.0) (2023-01-16)
+
+
+### Features
+
+* add schematic ([569d948](https://github.com/Notekunn/schematics/commit/569d9484ed116974b09d8837a80e6b0a122705e6))
+
 # [1.1.0](https://github.com/Notekunn/schematics/compare/v1.0.0...v1.1.0) (2023-01-16)
 
 
