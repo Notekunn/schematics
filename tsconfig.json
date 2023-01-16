@@ -2,17 +2,14 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2017",
-    "sourceMap": true,
-    "declaration": true,
+    "sourceMap": false,
+    "declaration": false,
     "outDir": "./lib",
     "baseUrl": "./",
     "noLib": false,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "paths": {
-      "@utils/*": ["./src/utils/*"]
-    }
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "src/**/files/**", "lib/**/files/**"]
 }

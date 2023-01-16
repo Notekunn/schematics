@@ -21,6 +21,8 @@ jobs:
         run: yarn && yarn build
         env:
           NODE_AUTH_TOKEN: ${{ github.token }}
+      - name: Copy template
+        run: yarn copy:collection && yarn copy:template
       - name: Release
         run: |
           git config --global user.email "action@github.com"

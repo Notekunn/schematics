@@ -14,7 +14,9 @@
     "build": "tsc -p tsconfig.json",
     "test": "jest",
     "format:check": "prettier --check .",
-    "format:write": "prettier --write ."
+    "format:write": "prettier --write .",
+    "copy:collection": "cpx src/collection.json lib && cpx 'src/schematics/**/schema.json' lib/schematics",
+    "copy:template": "cpx 'src/schematics/**/files/**/*' lib/schematics"
   },
   "devDependencies": {
     "@nestjs-architects/typed-cqrs": "^1.0.0",
@@ -34,6 +36,7 @@
   },
   "dependencies": {
     "@angular-devkit/core": "^15.1.1",
-    "@angular-devkit/schematics": "^15.1.1"
+    "@angular-devkit/schematics": "^15.1.1",
+    "cpx": "^1.5.0"
   }
 }
