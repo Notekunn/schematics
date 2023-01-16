@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+# [1.3.0](https://github.com/Notekunn/schematics/compare/v1.2.1...v1.3.0) (2023-01-16)
+
+
+### Features
+
+* add copy collection and schematic ([ac3254e](https://github.com/Notekunn/schematics/commit/ac3254e64754dd8b695b366f2c15bb2197489bda))
+
 ## [1.2.1](https://github.com/Notekunn/schematics/compare/v1.2.0...v1.2.1) (2023-01-16)
 
 
