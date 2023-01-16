@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.2.1](https://github.com/Notekunn/schematics/compare/v1.2.0...v1.2.1) (2023-01-16)
+
+
+### Bug Fixes
+
+* alias ([a801692](https://github.com/Notekunn/schematics/commit/a8016925a6a7b05cd54c0695a9c3bed7243ca143))
+
 # [1.2.0](https://github.com/Notekunn/schematics/compare/v1.1.0...v1.2.0) (2023-01-16)
 
 
