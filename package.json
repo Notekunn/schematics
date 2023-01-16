@@ -9,9 +9,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "lib/**/*"
-  ],
   "schematics": "./lib/collection.json",
   "scripts": {
     "build": "tsc -p tsconfig.json",

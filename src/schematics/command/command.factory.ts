@@ -10,9 +10,9 @@ import {
   template,
   mergeWith,
 } from '@angular-devkit/schematics'
-import { normalizeToKebabOrSnakeCase } from '@utils/formatting'
-import { NameParser } from '@utils/name-parser'
-import { mergeSourceRoot } from '@utils/source-root'
+import { normalizeToKebabOrSnakeCase } from '../../utils/formatting'
+import { NameParser } from '../../utils/name-parser'
+import { mergeSourceRoot } from '../../utils/source-root'
 import { CommandOptions } from './command.schema'
 
 export function main(options: CommandOptions) {
