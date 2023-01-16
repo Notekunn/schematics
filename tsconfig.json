@@ -8,6 +8,8 @@
     "baseUrl": "./",
     "noLib": false,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "paths": {
       "@utils/*": ["./src/utils/*"]
     }
