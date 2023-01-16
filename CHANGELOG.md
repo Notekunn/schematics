@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.3.1](https://github.com/Notekunn/schematics/compare/v1.3.0...v1.3.1) (2023-01-16)
+
+
+### Bug Fixes
+
+* path resolver ([7102013](https://github.com/Notekunn/schematics/commit/7102013b7e29c7a6e096724221b4640b58970489))
+
 # [1.3.0](https://github.com/Notekunn/schematics/compare/v1.2.1...v1.3.0) (2023-01-16)
 
 
