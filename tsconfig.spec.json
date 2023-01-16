@@ -1,4 +1,7 @@
 {
   "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./src"
+  },
   "exclude": ["node_modules", "src/**/files/**", "lib/**/files/**", "lib/**"]
 }

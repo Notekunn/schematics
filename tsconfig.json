@@ -9,7 +9,8 @@
     "noLib": false,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {}
   },
   "exclude": ["node_modules", "src/**/files/**", "lib/**/files/**"]
 }

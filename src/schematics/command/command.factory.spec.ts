@@ -10,6 +10,7 @@ describe('CommandFactory', () => {
     }
     const tree: UnitTestTree = await runner.runSchematic('command', options)
     const files = tree.files
+
     const commandFile = files.find((file) => file.endsWith('/cqrs/commands/impl/foo.command.ts'))
     const handlerFile = files.find((file) => file.endsWith('/cqrs/commands/handler/foo.handler.ts'))
     expect(commandFile).toBeDefined()
