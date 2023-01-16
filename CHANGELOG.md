@@ -1,0 +1,15 @@
+# Nest boilerplate changelog
+
+# 1.0.0 (2023-01-16)
+
+
+### Bug Fixes
+
+* **deps:** update setup node version ([c5a6abf](https://github.com/Notekunn/schematics/commit/c5a6abfc471f3a719776717047c7e809c5cbbdca))
+
+
+### Features
+
+* add command schema ([5a91394](https://github.com/Notekunn/schematics/commit/5a91394d9acdb077ceee93e9e719cf0fed3e42cf))
+* add query schema ([c7a6092](https://github.com/Notekunn/schematics/commit/c7a6092ac129b93a62142e154e8be5f6fed64495))
+* add semantic release ([ed040c8](https://github.com/Notekunn/schematics/commit/ed040c849c71fd7c15138ce3b67010b549954548))
