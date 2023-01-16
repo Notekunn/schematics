@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+# [1.1.0](https://github.com/Notekunn/schematics/compare/v1.0.0...v1.1.0) (2023-01-16)
+
+
+### Features
+
+* add build ([783b8d2](https://github.com/Notekunn/schematics/commit/783b8d262d511fa689e99eb5acdb100488a3aefb))
+
 # 1.0.0 (2023-01-16)
 
 
