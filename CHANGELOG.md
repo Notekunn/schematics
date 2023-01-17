@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+# [1.4.0](https://github.com/Notekunn/schematics/compare/v1.3.1...v1.4.0) (2023-01-17)
+
+
+### Features
+
+* add module while generate ([514183d](https://github.com/Notekunn/schematics/commit/514183de34133ace5a046b87f52ccfcf979b7cd4))
+
 ## [1.3.1](https://github.com/Notekunn/schematics/compare/v1.3.0...v1.3.1) (2023-01-16)
 
 
