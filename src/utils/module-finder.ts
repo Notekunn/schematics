@@ -39,7 +39,7 @@ export function discoveryModule<T extends BaseOptions>(options: T): Rule {
     const moduleFinder = new ModuleFinder(tree)
     if (options?.module && options?.sourceRoot) {
       const modulePaths = [options.module, `${options.module}s`].map((p) =>
-        normalize(join(options.sourceRoot as Path, strings.dasherize(p))),
+        normalize(join(options.sourceRoot as Path, 'modules', strings.dasherize(p))),
       )
       const moduleFounded =
         moduleFinder.find(modulePaths[0], options.module) || moduleFinder.find(modulePaths[1], options.module)

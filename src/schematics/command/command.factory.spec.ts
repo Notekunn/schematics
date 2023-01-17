@@ -23,7 +23,7 @@ describe('CommandFactory', () => {
     const options: CommandOptions = {
       name: 'CreateUser',
       module: 'User',
-      sourceRoot: 'src/modules',
+      sourceRoot: 'src',
     }
     const initTree = new EmptyTree()
     initTree.create('src/modules/users/user.module.ts', 'users module content')
