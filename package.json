@@ -12,7 +12,7 @@
   "schematics": "./lib/collection.json",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "jest",
+    "test": "jest --coverage",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "copy:collection": "cpx src/collection.json lib && cpx 'src/schematics/**/schema.json' lib/schematics",

@@ -4,4 +4,8 @@ export interface BaseOptions {
   path?: string
 
   flat?: boolean
+
+  sourceRoot?: string
+
+  module?: string
 }

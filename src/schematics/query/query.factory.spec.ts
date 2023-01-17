@@ -1,3 +1,4 @@
+import { EmptyTree } from '@angular-devkit/schematics'
 import { SchematicTestRunner, UnitTestTree } from '@angular-devkit/schematics/testing'
 import { join } from 'path'
 import { QueryOptions } from './query.schema'
@@ -15,5 +16,27 @@ describe('QueryFactory', () => {
     const handlerFile = files.find((file) => file.endsWith('/cqrs/queries/handler/foo.handler.ts'))
     expect(queryFile).toBeDefined()
     expect(handlerFile).toBeDefined()
+  })
+
+  it('should create a command in a subfolder', async () => {
+    const options: QueryOptions = {
+      name: 'GetUser',
+      module: 'User',
+      sourceRoot: 'src/modules',
+    }
+    const initTree = new EmptyTree()
+    initTree.create('src/modules/users/user.module.ts', 'users module content')
+    initTree.create('src/app.module.ts', 'app module content')
+    const tree: UnitTestTree = await runner.runSchematic('query', options, initTree)
+    const files = tree.files
+
+    const queryFile = files.find((file) => file == '/src/modules/users/cqrs/queries/impl/get-user.query.ts')
+    const handlerFile = files.find((file) => file == '/src/modules/users/cqrs/queries/handler/get-user.handler.ts')
+
+    expect(queryFile).toBeDefined()
+    expect(handlerFile).toBeDefined()
+
+    const queryContent = tree.readContent(queryFile)
+    expect(queryContent).toContain(`export class GetUserQuery extends Query<any>`)
   })
 })

@@ -10,6 +10,7 @@ import {
   template,
   mergeWith,
 } from '@angular-devkit/schematics'
+import { discoveryModule } from '../../utils/module-finder'
 import { normalizeToKebabOrSnakeCase } from '../../utils/formatting'
 import { NameParser } from '../../utils/name-parser'
 import { mergeSourceRoot } from '../../utils/source-root'
@@ -18,7 +19,7 @@ import { QueryOptions } from './query.schema'
 export function main(options: QueryOptions) {
   options = transform(options)
   return (tree: Tree, context: SchematicContext) => {
-    const sourceRule = chain([mergeSourceRoot(options), mergeWith(generate(options))])
+    const sourceRule = chain([mergeSourceRoot(options), discoveryModule(options), mergeWith(generate(options))])
     return branchAndMerge(sourceRule)(tree, context)
   }
 }

@@ -17,6 +17,15 @@
       "type": "string",
       "format": "path",
       "description": "The path to create the command."
+    },
+    "sourceRoot": {
+      "type": "string",
+      "description": "Nest service source root directory."
+    },
+    "flat": {
+      "type": "boolean",
+      "default": false,
+      "description": "Flag to indicate if a directory is created."
     }
   }
 }
