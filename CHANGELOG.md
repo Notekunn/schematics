@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+# [1.5.0](https://github.com/Notekunn/schematics/compare/v1.4.0...v1.5.0) (2023-01-17)
+
+
+### Features
+
+* update command query schema ([d0b0af3](https://github.com/Notekunn/schematics/commit/d0b0af3bd16fed184b9b6cd87023d38d4c0aa636))
+
 # [1.4.0](https://github.com/Notekunn/schematics/compare/v1.3.1...v1.4.0) (2023-01-17)
 
 
