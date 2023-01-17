@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.5.1](https://github.com/Notekunn/schematics/compare/v1.5.0...v1.5.1) (2023-01-17)
+
+
+### Bug Fixes
+
+* update template for command and queries ([61cfe54](https://github.com/Notekunn/schematics/commit/61cfe54b7fc9b059d2f321df2302a810baa779c8))
+
 # [1.5.0](https://github.com/Notekunn/schematics/compare/v1.4.0...v1.5.0) (2023-01-17)
 
 
