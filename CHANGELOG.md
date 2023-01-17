@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.5.2](https://github.com/Notekunn/schematics/compare/v1.5.1...v1.5.2) (2023-01-17)
+
+
+### Bug Fixes
+
+* change source root ([1ae0e01](https://github.com/Notekunn/schematics/commit/1ae0e01042c3ee77ddb52e62c72a103a37a71050))
+
 ## [1.5.1](https://github.com/Notekunn/schematics/compare/v1.5.0...v1.5.1) (2023-01-17)
 
 
