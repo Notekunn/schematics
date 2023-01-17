@@ -26,6 +26,12 @@
       "type": "boolean",
       "default": false,
       "description": "Flag to indicate if a directory is created."
+    },
+    "module": {
+      "type": "string",
+      "description": "Allows specification of the declaring module.",
+      "alias": "m",
+      "x-prompt": "What module would you like to declare this command in?"
     }
   }
 }
