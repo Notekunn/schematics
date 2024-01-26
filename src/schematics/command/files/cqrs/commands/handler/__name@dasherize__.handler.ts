@@ -4,6 +4,8 @@ import { <%= classify(name) %>Command } from '../impl/<%= dasherize(name) %>.com
 
 @CommandHandler(<%= classify(name) %>Command)
 export class <%= classify(name) %>CommandHandler implements ICommandHandler<<%= classify(name) %>Command> {
+  constructor() {}
+  
   async execute(command: <%= classify(name) %>Command) {
     return command
   }

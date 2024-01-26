@@ -16,7 +16,7 @@
     "path": {
       "type": "string",
       "format": "path",
-      "description": "The path to create the cqrsio."
+      "description": "The path to create the cqrs"
     }
   }
 }

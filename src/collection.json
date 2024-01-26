@@ -17,6 +17,12 @@
       "factory": "./schematics/query/query.factory#main",
       "schema": "./schematics/query/schema.json",
       "aliases": ["qr"]
+    },
+    "resource": {
+      "description": "Generates a resource",
+      "factory": "./schematics/resource/resource.factory#main",
+      "schema": "./schematics/resource/schema.json",
+      "aliases": ["res"]
     }
   }
 }
