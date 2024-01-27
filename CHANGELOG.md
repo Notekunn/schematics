@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+# [1.8.0](https://github.com/Notekunn/schematics/compare/v1.7.2...v1.8.0) (2024-01-27)
+
+
+### Features
+
+* call query on controller ([#8](https://github.com/Notekunn/schematics/issues/8)) ([692a90e](https://github.com/Notekunn/schematics/commit/692a90e9f53da86c872397b9cf0ed0e608ea0bd4))
+
 ## [1.7.2](https://github.com/Notekunn/schematics/compare/v1.7.1...v1.7.2) (2024-01-27)
 
 
