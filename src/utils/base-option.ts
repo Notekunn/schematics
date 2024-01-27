@@ -1,4 +1,7 @@
+export type SchemaType = 'query' | 'command' | 'resource'
 export interface BaseOptions {
+  type?: SchemaType
+
   name: string
 
   path?: string

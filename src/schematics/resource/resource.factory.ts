@@ -20,7 +20,7 @@ import * as pluralize from 'pluralize'
 export function main(options: ResourceOptions) {
   options = transform(options)
   return (tree: Tree, context: SchematicContext) => {
-    const sourceRule = chain([mergeSourceRoot(options), discoveryModule(options), mergeWith(generate(options))])
+    const sourceRule = chain([mergeSourceRoot(options), mergeWith(generate(options))])
     return branchAndMerge(sourceRule)(tree, context)
   }
 }
@@ -28,6 +28,8 @@ export function main(options: ResourceOptions) {
 function transform(source: ResourceOptions) {
   const target = Object.assign({}, source)
   const location = NameParser.parse(source)
+
+  target.type = 'resource'
   target.name = normalizeToKebabOrSnakeCase(location.name)
   target.path = normalizeToKebabOrSnakeCase(location.path)
 

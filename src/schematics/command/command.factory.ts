@@ -31,6 +31,7 @@ function transform(source: CommandOptions) {
   target.path = normalizeToKebabOrSnakeCase(location.path) as Path
 
   target.path = target.flat ? target.path : join(target.path as Path, target.name)
+  target.type = 'command'
 
   return target
 }
