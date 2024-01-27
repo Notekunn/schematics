@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+# [1.7.0](https://github.com/Notekunn/schematics/compare/v1.6.0...v1.7.0) (2024-01-27)
+
+
+### Features
+
+* update source root merge ([02b3329](https://github.com/Notekunn/schematics/commit/02b3329b24fd9c4703294d94a657e23bf1b12664))
+
 # [1.6.0](https://github.com/Notekunn/schematics/compare/v1.5.2...v1.6.0) (2024-01-27)
 
 
