@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.7.1](https://github.com/Notekunn/schematics/compare/v1.7.0...v1.7.1) (2024-01-27)
+
+
+### Bug Fixes
+
+* lint ([#6](https://github.com/Notekunn/schematics/issues/6)) ([d953d25](https://github.com/Notekunn/schematics/commit/d953d252f3a781a4019eea002b76b3ac335ac7fb))
+
 # [1.7.0](https://github.com/Notekunn/schematics/compare/v1.6.0...v1.7.0) (2024-01-27)
 
 
