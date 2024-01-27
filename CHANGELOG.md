@@ -1,5 +1,18 @@
 # Nest boilerplate changelog
 
+# [1.6.0](https://github.com/Notekunn/schematics/compare/v1.5.2...v1.6.0) (2024-01-27)
+
+
+### Bug Fixes
+
+* remove log on test ([a7c6dd8](https://github.com/Notekunn/schematics/commit/a7c6dd836526b09f0025cec58a551bbe3e2348a7))
+
+
+### Features
+
+* add query handler ([7ac048a](https://github.com/Notekunn/schematics/commit/7ac048a4d469bb7498daae9ae3de5fa65436cd5e))
+* add resource generator ([e340d05](https://github.com/Notekunn/schematics/commit/e340d050e35fcd8a45ee131a7a6223387dd30efb))
+
 ## [1.5.2](https://github.com/Notekunn/schematics/compare/v1.5.1...v1.5.2) (2023-01-17)
 
 
