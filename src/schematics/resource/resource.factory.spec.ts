@@ -27,8 +27,12 @@ describe('ResourceFactory', () => {
       '/posts/cqrs/commands/impl/update-post.command.ts',
       '/posts/cqrs/commands/impl/delete-post.command.ts',
       '/posts/cqrs/commands/handler/create-post.handler.ts',
-      // '/posts/cqrs/commands/handler/update-post.handler.ts',
-      // '/posts/cqrs/commands/handler/delete-post.handler.ts',
+      '/posts/cqrs/commands/handler/update-post.handler.ts',
+      '/posts/cqrs/commands/handler/delete-post.handler.ts',
+      '/posts/cqrs/queries/impl/get-post-list.query.ts',
+      '/posts/cqrs/queries/impl/get-post-detail.query.ts',
+      '/posts/cqrs/queries/impl/get-post-list.handler.ts',
+      '/posts/cqrs/queries/impl/get-post-detail.handler.ts',
     ]
 
     const filesNotIncludes = filesMustHave.filter((fileMustHave) => !files.includes(fileMustHave))
@@ -47,7 +51,7 @@ describe('ResourceFactory', () => {
     const updateDtoContent = tree.readContent('/posts/dto/update-post.dto.ts')
     expect(updateDtoContent).toContain('export class UpdatePostDto extends PartialType(CreatePostDto)')
 
-    const responseDtoContent = tree.readContent('/posts/controllers/post.controller.ts')
+    const responseDtoContent = tree.readContent('/posts/cqrs/queries/impl/get-post-list.handler.ts')
 
     console.log(responseDtoContent)
   })
