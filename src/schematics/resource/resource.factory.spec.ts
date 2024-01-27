@@ -31,8 +31,8 @@ describe('ResourceFactory', () => {
       '/posts/cqrs/commands/handler/delete-post.handler.ts',
       '/posts/cqrs/queries/impl/get-post-list.query.ts',
       '/posts/cqrs/queries/impl/get-post-detail.query.ts',
-      '/posts/cqrs/queries/impl/get-post-list.handler.ts',
-      '/posts/cqrs/queries/impl/get-post-detail.handler.ts',
+      '/posts/cqrs/queries/handler/get-post-list.handler.ts',
+      '/posts/cqrs/queries/handler/get-post-detail.handler.ts',
     ]
 
     const filesNotIncludes = filesMustHave.filter((fileMustHave) => !files.includes(fileMustHave))
@@ -50,10 +50,6 @@ describe('ResourceFactory', () => {
 
     const updateDtoContent = tree.readContent('/posts/dto/update-post.dto.ts')
     expect(updateDtoContent).toContain('export class UpdatePostDto extends PartialType(CreatePostDto)')
-
-    const responseDtoContent = tree.readContent('/posts/cqrs/queries/impl/get-post-list.handler.ts')
-
-    console.log(responseDtoContent)
   })
 
   it('name have > 2 words', async () => {
