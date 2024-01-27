@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.7.2](https://github.com/Notekunn/schematics/compare/v1.7.1...v1.7.2) (2024-01-27)
+
+
+### Bug Fixes
+
+* controller resource space lint ([#7](https://github.com/Notekunn/schematics/issues/7)) ([c1919d3](https://github.com/Notekunn/schematics/commit/c1919d37e84fca92f2c2962686a1b9d5125b7ca1))
+
 ## [1.7.1](https://github.com/Notekunn/schematics/compare/v1.7.0...v1.7.1) (2024-01-27)
 
 
