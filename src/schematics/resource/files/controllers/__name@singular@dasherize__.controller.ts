@@ -20,12 +20,12 @@ export class <%= classify(singular(name)) %>Controller {
 
   @Get()
   find<%= classify(singular(name)) %>(@Body() get<%= classify(singular(name)) %>Dto: Get<%= classify(singular(name)) %>Dto) {
-    return this.queryBus.execute(new )
+    return this.queryBus.execute(new Get<%= classify(singular(name)) %>ListQuery(get<%= classify(singular(name)) %>Dto))
   }
 
   @Get(':id')
   findOne<%= classify(singular(name)) %>(@Param('id', ParseIntPipe) id: number) {
-    return this.queryBus.execute()
+    return this.queryBus.execute(new Get<%= classify(singular(name)) %>DetailQuery(id))
   }
 
   @Patch(':id')
