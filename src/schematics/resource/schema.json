@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "SchematicsNestCqrsResource",
+  "title": "NestJS CQRS Resource Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the resource.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the resource?"
+    },
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the resource."
+    },
+    "sourceRoot": {
+      "type": "string",
+      "description": "Nest service source root directory."
+    },
+    "flat": {
+      "type": "boolean",
+      "default": false,
+      "description": "Flag to indicate if a directory is created."
+    },
+    "orm": {
+      "type": "string",
+      "description": "The transport layer.",
+      "default": "typeorm",
+      "enum": ["typeorm", "nonce"],
+      "x-prompt": {
+        "message": "What orm do you use",
+        "type": "list",
+        "items": [
+          { "value": "typeorm", "label": "TypeORM" },
+          {
+            "value": "Nonce",
+            "label": "Do not use"
+          }
+        ]
+      }
+    },
+    "crud": {
+      "type": "boolean",
+      "description": "When true, CRUD entry points are generated.",
+      "default": true,
+      "x-prompt": {
+        "message": "Would you like to generate CRUD entry points?",
+        "type": "confirmation"
+      }
+    },
+    "createDto": {
+      "type": "boolean",
+      "description": "When true, dto will be created.",
+      "default": true,
+      "x-prompt": {
+        "message": "Would you like to generate dto?",
+        "type": "confirmation"
+      }
+    }
+  }
+}
