@@ -1,1 +1,1 @@
-export class Get<%= classify(singular(name)) %>Dto{}
+export class Get<%= classify(singular(name)) %>Dto {}
