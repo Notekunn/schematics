@@ -5,7 +5,7 @@ import { Get<%= classify(singular(name)) %>ListQuery } from '../impl/get-<%= das
 @QueryHandler(Get<%= classify(singular(name)) %>ListQuery)
 export class Get<%= classify(singular(name)) %>ListQueryHandler implements IQueryHandler<Get<%= classify(singular(name)) %>ListQuery> {
   constructor() {}
-  
+
   async execute(query: Get<%= classify(singular(name)) %>ListQuery) {
     return query
   }

@@ -5,7 +5,7 @@ import { Delete<%= classify(singular(name)) %>Command } from '../impl/delete-<%=
 @CommandHandler(Delete<%= classify(singular(name)) %>Command)
 export class Delete<%= classify(singular(name)) %>CommandHandler implements ICommandHandler<Delete<%= classify(singular(name)) %>Command> {
   constructor() {}
-  
+
   async execute(command: Delete<%= classify(singular(name)) %>Command) {
     return command
   }

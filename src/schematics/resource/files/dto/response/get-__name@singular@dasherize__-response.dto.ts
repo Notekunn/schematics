@@ -1,3 +1,1 @@
-export class Get<%= classify(singular(name)) %>ResponseDto {
-
-}
+export class Get<%= classify(singular(name)) %>ResponseDto {}
