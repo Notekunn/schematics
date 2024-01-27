@@ -27,6 +27,8 @@ export function main(options: QueryOptions) {
 function transform(source: QueryOptions) {
   const target = Object.assign({}, source)
   const location = NameParser.parse(source)
+
+  target.type = 'query'
   target.name = normalizeToKebabOrSnakeCase(location.name)
   target.path = normalizeToKebabOrSnakeCase(location.path)
 

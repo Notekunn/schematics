@@ -87,25 +87,42 @@ describe('ResourceFactory', () => {
     expect(updateDtoContent).toContain('export class UpdatePublicFileDto extends PartialType(CreatePublicFileDto)')
   })
 
-  // it('should create a command in a subfolder', async () => {
-  //   const options: ResourceOptions = {
-  //     name: 'User',
-  //     sourceRoot: 'src',
-  //     orm: 'typeorm',
-  //   }
-  //   const initTree = new EmptyTree()
-  //   // initTree.create('src/modules/users/user.module.ts', 'users module content')
-  //   // initTree.create('src/app.module.ts', 'app module content')
-  //   const tree: UnitTestTree = await runner.runSchematic('resource', options, initTree)
-  //   const files = tree.files
+  it('should create a command in a subfolder', async () => {
+    const options: ResourceOptions = {
+      name: 'User',
+      sourceRoot: 'src',
+      orm: 'typeorm',
+    }
+    const initTree = new EmptyTree()
+    initTree.create('src/app.module.ts', 'app module content')
+    initTree.create('package.json', '')
+    initTree.create('tsconfig.json', '')
+    const tree: UnitTestTree = await runner.runSchematic('resource', options, initTree)
+    const files = tree.files
 
-  //   const queryFile = files.find((file) => file == '/src/modules/users/cqrs/queries/impl/get-user.query.ts')
-  //   const handlerFile = files.find((file) => file == '/src/modules/users/cqrs/queries/handler/get-user.handler.ts')
+    const filesMustHave = [
+      '/src/modules/user/user.module.ts',
+      '/src/modules/user/controllers/user.controller.ts',
+      '/src/modules/user/cqrs/commands/handler/create-user.handler.ts',
+      '/src/modules/user/cqrs/commands/handler/delete-user.handler.ts',
+      '/src/modules/user/cqrs/commands/handler/update-user.handler.ts',
+      '/src/modules/user/cqrs/commands/impl/create-user.command.ts',
+      '/src/modules/user/cqrs/commands/impl/delete-user.command.ts',
+      '/src/modules/user/cqrs/commands/impl/update-user.command.ts',
+      '/src/modules/user/cqrs/queries/handler/get-user-detail.handler.ts',
+      '/src/modules/user/cqrs/queries/handler/get-user-list.handler.ts',
+      '/src/modules/user/cqrs/queries/impl/get-user-detail.query.ts',
+      '/src/modules/user/cqrs/queries/impl/get-user-list.query.ts',
+      '/src/modules/user/dto/create-user.dto.ts',
+      '/src/modules/user/dto/get-user.dto.ts',
+      '/src/modules/user/dto/update-user.dto.ts',
+      '/src/modules/user/dto/response/get-user-response.dto.ts',
+      '/src/modules/user/entities/user.entity.ts',
+      '/src/modules/user/repositories/user.repository.ts',
+    ]
 
-  //   expect(queryFile).toBeDefined()
-  //   expect(handlerFile).toBeDefined()
+    const filesNotIncludes = filesMustHave.filter((fileMustHave) => !files.includes(fileMustHave))
 
-  //   const queryContent = tree.readContent(queryFile)
-  //   expect(queryContent).toContain(`export class GetUserQuery extends Query<any>`)
-  // })
+    expect(filesNotIncludes).toEqual([])
+  })
 })
