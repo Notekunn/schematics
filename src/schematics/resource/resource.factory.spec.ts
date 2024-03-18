@@ -2,6 +2,7 @@ import { EmptyTree } from '@angular-devkit/schematics'
 import { SchematicTestRunner, UnitTestTree } from '@angular-devkit/schematics/testing'
 import { join } from 'path'
 import { ResourceOptions } from './resource.schema'
+import fs from 'fs'
 
 describe('ResourceFactory', () => {
   const runner = new SchematicTestRunner('.', join(process.cwd(), 'src/collection.json'))
@@ -20,7 +21,7 @@ describe('ResourceFactory', () => {
       '/posts/post.module.ts',
       '/posts/dto/create-post.dto.ts',
       '/posts/dto/update-post.dto.ts',
-      '/posts/dto/response/get-post-response.dto.ts',
+      '/posts/dto/response/post-response.dto.ts',
       '/posts/entities/post.entity.ts',
       '/posts/controllers/post.controller.ts',
       '/posts/cqrs/commands/impl/create-post.command.ts',
@@ -66,7 +67,7 @@ describe('ResourceFactory', () => {
       '/public-file/public-file.module.ts',
       '/public-file/dto/create-public-file.dto.ts',
       '/public-file/dto/update-public-file.dto.ts',
-      '/public-file/dto/response/get-public-file-response.dto.ts',
+      '/public-file/dto/response/public-file-response.dto.ts',
       '/public-file/entities/public-file.entity.ts',
     ]
 
@@ -85,6 +86,18 @@ describe('ResourceFactory', () => {
 
     const updateDtoContent = tree.readContent('/public-file/dto/update-public-file.dto.ts')
     expect(updateDtoContent).toContain('export class UpdatePublicFileDto extends PartialType(CreatePublicFileDto)')
+
+    for (const file of files) {
+      const directoryName = join(process.cwd(), 'out', file).split('/').slice(0, -1).join('/')
+      if (!fs.existsSync(directoryName)) {
+        fs.mkdirSync(directoryName, { recursive: true })
+      }
+      fs.writeFileSync(join(process.cwd(), 'out', file), tree.readContent(file), {
+        encoding: 'utf-8',
+        flag: 'w',
+      })
+      console.log(file)
+    }
   })
 
   it('should create a command in a subfolder', async () => {
@@ -116,7 +129,7 @@ describe('ResourceFactory', () => {
       '/src/modules/user/dto/create-user.dto.ts',
       '/src/modules/user/dto/get-user.dto.ts',
       '/src/modules/user/dto/update-user.dto.ts',
-      '/src/modules/user/dto/response/get-user-response.dto.ts',
+      '/src/modules/user/dto/response/user-response.dto.ts',
       '/src/modules/user/entities/user.entity.ts',
       '/src/modules/user/repositories/user.repository.ts',
     ]
