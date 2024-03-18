@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, ParseIntPipe, Patch, Post } from '@nestjs/common'
+import { Body, Controller, Delete, Get, ParseIntPipe, Param, Patch, Post } from '@nestjs/common'
 import { CommandBus, QueryBus } from '@nestjs/cqrs'
 
 import { Create<%= classify(singular(name)) %>Command } from '../cqrs/commands/impl/create-<%= dasherize(singular(name)) %>.command'
@@ -6,6 +6,7 @@ import { Delete<%= classify(singular(name)) %>Command } from '../cqrs/commands/i
 import { Update<%= classify(singular(name)) %>Command } from '../cqrs/commands/impl/update-<%= dasherize(singular(name)) %>.command'
 import { Get<%= classify(singular(name)) %>DetailQuery } from '../cqrs/queries/impl/get-<%= dasherize(singular(name)) %>-detail.query'
 import { Get<%= classify(singular(name)) %>ListQuery } from '../cqrs/queries/impl/get-<%= dasherize(singular(name)) %>-list.query'
+import { Get<%= classify(singular(name)) %>Dto } from '../dto/get-<%= dasherize(singular(name)) %>.dto'
 import { Create<%= classify(singular(name)) %>Dto } from '../dto/create-<%= dasherize(singular(name)) %>.dto'
 import { Update<%= classify(singular(name)) %>Dto } from '../dto/update-<%= dasherize(singular(name)) %>.dto'
 
