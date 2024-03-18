@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.8.1](https://github.com/Notekunn/schematics/compare/v1.8.0...v1.8.1) (2024-03-18)
+
+
+### Bug Fixes
+
+* controller import get detail dto and param ([1f0b540](https://github.com/Notekunn/schematics/commit/1f0b5405f9ff28fdcd74b868a7dad8ea1db368df))
+
 # [1.8.0](https://github.com/Notekunn/schematics/compare/v1.7.2...v1.8.0) (2024-01-27)
 
 
