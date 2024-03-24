@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.8.2](https://github.com/Notekunn/schematics/compare/v1.8.1...v1.8.2) (2024-03-24)
+
+
+### Bug Fixes
+
+* controller name and get param ([#15](https://github.com/Notekunn/schematics/issues/15)) ([02c903a](https://github.com/Notekunn/schematics/commit/02c903a5ca836eb9f33ce96b399e1d18a01e4549))
+
 ## [1.8.1](https://github.com/Notekunn/schematics/compare/v1.8.0...v1.8.1) (2024-03-18)
 
 
