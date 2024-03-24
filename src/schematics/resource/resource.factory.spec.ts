@@ -96,8 +96,26 @@ describe('ResourceFactory', () => {
         encoding: 'utf-8',
         flag: 'w',
       })
-      console.log(file)
     }
+  })
+
+  it('controller with resource name end with y', async () => {
+    const options: ResourceOptions = {
+      name: 'categories',
+      orm: 'typeorm',
+      createDto: true,
+      crud: true,
+    }
+    const tree: UnitTestTree = await runner.runSchematic('resource', options)
+    const files = tree.files
+    const filesMustHave = ['/categories/category.module.ts', '/categories/controllers/category.controller.ts']
+
+    const filesNotIncludes = filesMustHave.filter((fileMustHave) => !files.includes(fileMustHave))
+
+    expect(filesNotIncludes).toEqual([])
+
+    const controllerContent = tree.readContent('/categories/controllers/category.controller.ts')
+    expect(controllerContent).toContain("@Controller(categories')")
   })
 
   it('should create a command in a subfolder', async () => {

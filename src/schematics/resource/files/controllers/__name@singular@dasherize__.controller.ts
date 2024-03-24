@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, ParseIntPipe, Param, Patch, Post } from '@nestjs/common'
+import { Body, Controller, Delete, Get, ParseIntPipe, Param, Patch, Post, Query } from '@nestjs/common'
 import { CommandBus, QueryBus } from '@nestjs/cqrs'
 
 import { Create<%= classify(singular(name)) %>Command } from '../cqrs/commands/impl/create-<%= dasherize(singular(name)) %>.command'
@@ -10,7 +10,7 @@ import { Get<%= classify(singular(name)) %>Dto } from '../dto/get-<%= dasherize(
 import { Create<%= classify(singular(name)) %>Dto } from '../dto/create-<%= dasherize(singular(name)) %>.dto'
 import { Update<%= classify(singular(name)) %>Dto } from '../dto/update-<%= dasherize(singular(name)) %>.dto'
 
-@Controller('<%= dasherize(singular(name)) %>s')
+@Controller('<%= dasherize(plural(name)) %>')
 export class <%= classify(singular(name)) %>Controller {
   constructor(private readonly queryBus: QueryBus, private readonly commandBus: CommandBus) {}
 
@@ -20,7 +20,7 @@ export class <%= classify(singular(name)) %>Controller {
   }
 
   @Get()
-  find<%= classify(singular(name)) %>(@Body() get<%= classify(singular(name)) %>Dto: Get<%= classify(singular(name)) %>Dto) {
+  find<%= classify(singular(name)) %>(@Query() get<%= classify(singular(name)) %>Dto: Get<%= classify(singular(name)) %>Dto) {
     return this.queryBus.execute(new Get<%= classify(singular(name)) %>ListQuery(get<%= classify(singular(name)) %>Dto))
   }
 
