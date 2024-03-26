@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+# [1.9.0](https://github.com/Notekunn/schematics/compare/v1.8.2...v1.9.0) (2024-03-26)
+
+
+### Features
+
+* remove unuse import ([2669b18](https://github.com/Notekunn/schematics/commit/2669b18857bbdde40b8a06c94edd4f5570cea3b0))
+
 ## [1.8.2](https://github.com/Notekunn/schematics/compare/v1.8.1...v1.8.2) (2024-03-24)
 
 
