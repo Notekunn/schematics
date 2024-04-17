@@ -26,14 +26,14 @@
     },
     "command-ddd": {
       "description": "Generates a CQRS command",
-      "factory": "./schematics/command/command.factory#main",
-      "schema": "./schematics/command/schema.json",
+      "factory": "./schematics/command-ddd/command.factory#main",
+      "schema": "./schematics/command-ddd/schema.json",
       "aliases": ["cmd-ddd"]
     },
     "query-ddd": {
       "description": "Generates a CQRS query",
-      "factory": "./schematics/query/query.factory#main",
-      "schema": "./schematics/query/schema.json",
+      "factory": "./schematics/query-ddd/query.factory#main",
+      "schema": "./schematics/query-ddd/schema.json",
       "aliases": ["qr-ddd"]
     }
   }
