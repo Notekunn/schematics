@@ -10,7 +10,7 @@ describe('CommandDDDFactory', () => {
       name: 'foo',
       flat: true,
     }
-    const tree: UnitTestTree = await runner.runSchematic('command', options)
+    const tree: UnitTestTree = await runner.runSchematic('command-ddd', options)
     const files = tree.files
 
     const commandFile = files.find((file) => file.endsWith('/commands/impl/foo.command.ts'))
@@ -28,7 +28,7 @@ describe('CommandDDDFactory', () => {
     const initTree = new EmptyTree()
     initTree.create('src/modules/users/user.module.ts', 'users module content')
     initTree.create('src/app.module.ts', 'app module content')
-    const tree: UnitTestTree = await runner.runSchematic('command', options, initTree)
+    const tree: UnitTestTree = await runner.runSchematic('command-ddd', options, initTree)
     const files = tree.files
 
     const commandFile = files.find((file) => file == '/src/modules/users/commands/impl/create-user.command.ts')

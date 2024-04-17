@@ -8,8 +8,9 @@ describe('QueryFactory', () => {
   it('should create a command', async () => {
     const options: QueryOptions = {
       name: 'foo',
+      flat: true,
     }
-    const tree: UnitTestTree = await runner.runSchematic('query', options)
+    const tree: UnitTestTree = await runner.runSchematic('query-ddd', options)
     const files = tree.files
 
     const queryFile = files.find((file) => file.endsWith('/queries/impl/foo.query.ts'))
@@ -27,10 +28,9 @@ describe('QueryFactory', () => {
     const initTree = new EmptyTree()
     initTree.create('src/modules/users/user.module.ts', 'users module content')
     initTree.create('src/app.module.ts', 'app module content')
-    const tree: UnitTestTree = await runner.runSchematic('query', options, initTree)
+    const tree: UnitTestTree = await runner.runSchematic('query-ddd', options, initTree)
     const files = tree.files
 
-    console.log(files)
     const queryFile = files.find((file) => file == '/src/modules/users/queries/impl/get-user.query.ts')
     const handlerFile = files.find((file) => file == '/src/modules/users/queries/handler/get-user.handler.ts')
 
