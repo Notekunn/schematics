@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+# [1.10.0](https://github.com/Notekunn/schematics/compare/v1.9.0...v1.10.0) (2024-04-17)
+
+
+### Features
+
+* add ddd command ([#18](https://github.com/Notekunn/schematics/issues/18)) ([e167778](https://github.com/Notekunn/schematics/commit/e16777894725f1d407f0e0d4ee80e9074e99b6f2))
+
 # [1.9.0](https://github.com/Notekunn/schematics/compare/v1.8.2...v1.9.0) (2024-03-26)
 
 
