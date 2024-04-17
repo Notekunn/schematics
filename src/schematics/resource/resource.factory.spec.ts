@@ -115,7 +115,7 @@ describe('ResourceFactory', () => {
     expect(filesNotIncludes).toEqual([])
 
     const controllerContent = tree.readContent('/categories/controllers/category.controller.ts')
-    expect(controllerContent).toContain("@Controller(categories')")
+    expect(controllerContent).toContain("@Controller('categories')")
   })
 
   it('should create a command in a subfolder', async () => {
