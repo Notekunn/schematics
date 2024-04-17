@@ -23,6 +23,18 @@
       "factory": "./schematics/resource/resource.factory#main",
       "schema": "./schematics/resource/schema.json",
       "aliases": ["res"]
+    },
+    "command-ddd": {
+      "description": "Generates a CQRS command",
+      "factory": "./schematics/command/command.factory#main",
+      "schema": "./schematics/command/schema.json",
+      "aliases": ["cmd-ddd"]
+    },
+    "query-ddd": {
+      "description": "Generates a CQRS query",
+      "factory": "./schematics/query/query.factory#main",
+      "schema": "./schematics/query/schema.json",
+      "aliases": ["qr-ddd"]
     }
   }
 }

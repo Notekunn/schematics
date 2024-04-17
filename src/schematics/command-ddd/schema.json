@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "SchematicsNestCqrsDDDCommand",
+  "title": "NestJS CQRS DDD Command Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the command.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the command?"
+    },
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the command."
+    },
+    "sourceRoot": {
+      "type": "string",
+      "description": "Nest service source root directory."
+    },
+    "flat": {
+      "type": "boolean",
+      "default": false,
+      "description": "Flag to indicate if a directory is created."
+    },
+    "module": {
+      "type": "string",
+      "description": "Allows specification of the declaring module.",
+      "alias": "m",
+      "x-prompt": "What module would you like to declare this command in?"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "SchematicsNestCqrsQuery",
+  "title": "NestJS CQRS Query Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the query.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the query?"
+    },
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the query."
+    },
+    "sourceRoot": {
+      "type": "string",
+      "description": "Nest service source root directory."
+    },
+    "flat": {
+      "type": "boolean",
+      "default": false,
+      "description": "Flag to indicate if a directory is created."
+    },
+    "module": {
+      "type": "string",
+      "description": "Allows specification of the declaring module.",
+      "alias": "m",
+      "x-prompt": "What module would you like to declare this query in?"
+    }
+  }
+}
