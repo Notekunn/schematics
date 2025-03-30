@@ -16,13 +16,18 @@ jobs:
           token: ${{ secrets.PAT }}
       - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '22'
       - name: Build
-        run: yarn && yarn build
+        run: |
+          corepack enable
+          pnpm install
+          pnpm build
         env:
           NODE_AUTH_TOKEN: ${{ github.token }}
       - name: Copy template
-        run: yarn copy:collection && yarn copy:template
+        run: |
+          pnpm copy:collection
+          pnpm copy:template
       - name: Release
         run: |
           git config --global user.email "action@github.com"
