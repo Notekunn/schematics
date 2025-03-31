@@ -15,8 +15,8 @@
     "test": "jest --coverage",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
-    "copy:collection": "cpx src/collection.json lib && cpx 'src/schematics/**/schema.json' lib/schematics",
-    "copy:template": "cpx 'src/schematics/**/files/**/*' lib/schematics"
+    "copy:collection": "cpx-fixed src/collection.json lib && cpx-fixed 'src/schematics/**/schema.json' lib/schematics",
+    "copy:template": "cpx-fixed 'src/schematics/**/files/**/*' lib/schematics"
   },
   "devDependencies": {
     "@nestjs-architects/typed-cqrs": "^2.1.0",
@@ -31,6 +31,7 @@
     "@semantic-release/release-notes-generator": "^14.0.3",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.14",
+    "cpx-fixed": "^1.6.0",
     "jest": "^29.7.0",
     "prettier": "^3.5.3",
     "semantic-release": "^24.2.3",
@@ -40,7 +41,6 @@
   "dependencies": {
     "@angular-devkit/core": "^19.2.5",
     "@angular-devkit/schematics": "^19.2.5",
-    "cpx": "^1.5.0",
     "pluralize": "^8.0.0"
   },
   "packageManager": "pnpm@10.7.0"

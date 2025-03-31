@@ -20,7 +20,7 @@ jobs:
       - name: Build
         run: |
           corepack enable
-          pnpm install
+          pnpm install --frozen-lockfile --ignore-scripts
           pnpm build
         env:
           NODE_AUTH_TOKEN: ${{ github.token }}
