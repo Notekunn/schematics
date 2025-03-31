@@ -1,7 +1,7 @@
 {
   "name": "@notekunn/schematics",
   "version": "1.10.2",
-  "description": "Custom schematic for CQRS nestjs structure",
+  "description": "Custom NestJS schematics for CQRS structure",
   "main": "lib/index.js",
   "repository": "git@github.com:Notekunn/schematics.git",
   "author": "Neil <cuong.nl5.kma@gmail.com>",
