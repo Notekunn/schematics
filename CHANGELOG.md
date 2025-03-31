@@ -5,6 +5,15 @@
 
 ### Bug Fixes
 
+* change description ([9a28c1c](https://github.com/Notekunn/schematics/commit/9a28c1ccd52c01aa76a828c0d36bfc661095e918))
+* dump ([dd6d9f8](https://github.com/Notekunn/schematics/commit/dd6d9f8cfb3c7b4420fb854195856101741144d6))
+* replace cpx as cpx-fixed ([8965216](https://github.com/Notekunn/schematics/commit/896521679a3a7924d5085ae3b0478bce2df1d516))
+
+## [1.10.2](https://github.com/Notekunn/schematics/compare/v1.10.1...v1.10.2) (2025-03-31)
+
+
+### Bug Fixes
+
 * dump ([dd6d9f8](https://github.com/Notekunn/schematics/commit/dd6d9f8cfb3c7b4420fb854195856101741144d6))
 * replace cpx as cpx-fixed ([8965216](https://github.com/Notekunn/schematics/commit/896521679a3a7924d5085ae3b0478bce2df1d516))
 
