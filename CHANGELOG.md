@@ -1,5 +1,13 @@
 # Nest boilerplate changelog
 
+## [1.10.2](https://github.com/Notekunn/schematics/compare/v1.10.1...v1.10.2) (2025-03-31)
+
+
+### Bug Fixes
+
+* dump ([dd6d9f8](https://github.com/Notekunn/schematics/commit/dd6d9f8cfb3c7b4420fb854195856101741144d6))
+* replace cpx as cpx-fixed ([8965216](https://github.com/Notekunn/schematics/commit/896521679a3a7924d5085ae3b0478bce2df1d516))
+
 ## [1.10.1](https://github.com/Notekunn/schematics/compare/v1.10.0...v1.10.1) (2024-04-17)
 
 
