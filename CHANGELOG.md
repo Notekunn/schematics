@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.10.3](https://github.com/Notekunn/schematics/compare/v1.10.2...v1.10.3) (2025-04-01)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump ts-jest from 29.3.0 to 29.3.1 ([#21](https://github.com/Notekunn/schematics/issues/21)) ([a13e69c](https://github.com/Notekunn/schematics/commit/a13e69c98a52e48d5a8c274dff76effdf50a09c2))
+
 ## [1.10.2](https://github.com/Notekunn/schematics/compare/v1.10.1...v1.10.2) (2025-03-31)
 
 
