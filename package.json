@@ -39,7 +39,7 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "@angular-devkit/core": "^19.2.5",
+    "@angular-devkit/core": "^19.2.6",
     "@angular-devkit/schematics": "^19.2.5",
     "pluralize": "^8.0.0"
   },
