@@ -1,5 +1,12 @@
 # Nest boilerplate changelog
 
+## [1.10.4](https://github.com/Notekunn/schematics/compare/v1.10.3...v1.10.4) (2025-05-07)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/node from 22.13.14 to 22.15.14 ([#58](https://github.com/Notekunn/schematics/issues/58)) ([dfa56cd](https://github.com/Notekunn/schematics/commit/dfa56cdf1d0b75af44a32d679929a2eea8b6b5af))
+
 ## [1.10.3](https://github.com/Notekunn/schematics/compare/v1.10.2...v1.10.3) (2025-04-01)
 
 
