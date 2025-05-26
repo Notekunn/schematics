@@ -21,7 +21,7 @@
   "devDependencies": {
     "@nestjs-architects/typed-cqrs": "^2.1.0",
     "@nestjs/common": "^11.0.12",
-    "@nestjs/core": "^11.0.12",
+    "@nestjs/core": "^11.1.2",
     "@nestjs/cqrs": "^11.0.3",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
