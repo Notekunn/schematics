@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@nestjs-architects/typed-cqrs": "^2.1.0",
-    "@nestjs/common": "^11.0.12",
+    "@nestjs/common": "^11.1.4",
     "@nestjs/core": "^11.0.12",
     "@nestjs/cqrs": "^11.0.3",
     "@semantic-release/changelog": "^6.0.3",
