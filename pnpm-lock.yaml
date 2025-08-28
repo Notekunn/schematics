@@ -12,8 +12,8 @@ importers:
         specifier: ^20.2.0
         version: 20.2.0
       '@angular-devkit/schematics':
-        specifier: ^20.2.0
-        version: 20.2.0
+        specifier: ^20.2.1
+        version: 20.2.1
       pluralize:
         specifier: ^8.0.0
         version: 8.0.0
@@ -88,8 +88,17 @@ packages:
       chokidar:
         optional: true
 
-  '@angular-devkit/schematics@20.2.0':
-    resolution: {integrity: sha512-TCPIN6Bd04oGuNocETmsd9hzGYrjrivisbMKb0WOuDi3OnCkmWqsPR+QA2kYwTOGqG3HXkz/z3CA0g04M2fgrQ==}
+  '@angular-devkit/core@20.2.1':
+    resolution: {integrity: sha512-07xiRltPA1X+C0AQo/glI0in+bpwGW1cgOen2pp0MhXVlawW1M9cKZFb/35uvYUEWJUxLwBB3ZKJXBmpWWw0Rg==}
+    engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
+    peerDependencies:
+      chokidar: ^4.0.0
+    peerDependenciesMeta:
+      chokidar:
+        optional: true
+
+  '@angular-devkit/schematics@20.2.1':
+    resolution: {integrity: sha512-hxQQhlOKLjj4+fJrvMFWnVA6vwewwtkEGneolY+aMb8dUAEE7sw1FLo02pPdIBIXLWIYIcGVRI0E5iCTcLq9zw==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
 
   '@babel/code-frame@7.27.1':
@@ -2631,9 +2640,18 @@ snapshots:
       rxjs: 7.8.2
       source-map: 0.7.6
 
-  '@angular-devkit/schematics@20.2.0':
+  '@angular-devkit/core@20.2.1':
     dependencies:
-      '@angular-devkit/core': 20.2.0
+      ajv: 8.17.1
+      ajv-formats: 3.0.1(ajv@8.17.1)
+      jsonc-parser: 3.3.1
+      picomatch: 4.0.3
+      rxjs: 7.8.2
+      source-map: 0.7.6
+
+  '@angular-devkit/schematics@20.2.1':
+    dependencies:
+      '@angular-devkit/core': 20.2.1
       jsonc-parser: 3.3.1
       magic-string: 0.30.17
       ora: 8.2.0
