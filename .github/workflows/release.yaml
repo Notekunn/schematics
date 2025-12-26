@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+permissions:
+  id-token: write # Required for OIDC
 
 jobs:
   release:
@@ -16,7 +18,7 @@ jobs:
           token: ${{ secrets.PAT }}
       - uses: actions/setup-node@v3
         with:
-          node-version: '22'
+          node-version: "22"
       - name: Build
         run: |
           corepack enable
@@ -36,5 +38,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
           NODE_AUTH_TOKEN: ${{ github.token }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_USERNAME: ${{ secrets.NPM_USERNAME }}
+          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # NPM_USERNAME: ${{ secrets.NPM_USERNAME }}
