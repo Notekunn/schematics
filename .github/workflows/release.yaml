@@ -38,5 +38,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
           NODE_AUTH_TOKEN: ${{ github.token }}
-          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          # NPM_USERNAME: ${{ secrets.NPM_USERNAME }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_USERNAME: ${{ secrets.NPM_USERNAME }}
