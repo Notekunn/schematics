@@ -1,5 +1,19 @@
 # Nest boilerplate changelog
 
+# [1.11.0](https://github.com/Notekunn/schematics/compare/v1.10.4...v1.11.0) (2025-12-26)
+
+
+### Bug Fixes
+
+* bump version ([0dd77e0](https://github.com/Notekunn/schematics/commit/0dd77e09dd6e9d78bc26e681ef536617c63dd22e))
+* ci cd ([20ca689](https://github.com/Notekunn/schematics/commit/20ca689d859d116a03024855cb41a6e7fe29f022))
+
+
+### Features
+
+* **cqrs:** implement command and query handlers with repository integration ([37b9413](https://github.com/Notekunn/schematics/commit/37b941370e0d5dc8e70f1dcace09e2ca5d9437a2))
+* update release ([7ea494e](https://github.com/Notekunn/schematics/commit/7ea494e1808333216c6b8b06f5113b54bf0cc10f))
+
 ## [1.10.4](https://github.com/Notekunn/schematics/compare/v1.10.3...v1.10.4) (2025-05-07)
 
 
