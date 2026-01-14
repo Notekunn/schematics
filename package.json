@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@angular-devkit/core": "^21.0.4",
-    "@angular-devkit/schematics": "^21.0.4",
+    "@angular-devkit/schematics": "^21.1.0",
     "pluralize": "^8.0.0"
   },
   "packageManager": "pnpm@10.7.0"
